@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lommeregner.MyGridPage">
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"  />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <BoxView BackgroundColor="Aqua" Grid.Row="0" Grid.Column="0" ></BoxView>
+        <BoxView BackgroundColor="Blue" Grid.Row="1" Grid.Column="0" ></BoxView>
+        <BoxView BackgroundColor="Fuchsia" Grid.Row="2" Grid.Column="0" ></BoxView>
+
+
+        <BoxView BackgroundColor="Maroon" Grid.Row="0" Grid.Column="1" ></BoxView>
+        <BoxView BackgroundColor="Purple" Grid.Row="1" Grid.Column="1" ></BoxView>
+        <BoxView BackgroundColor="Silver" Grid.Row="2" Grid.Column="1" ></BoxView>
+
+    </Grid>
+    
+    
+
+</ContentPage>

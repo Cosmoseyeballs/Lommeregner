@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lommeregner.ProductPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+
+
+        <Entry x:Name="ProductIdEntry"  Text="1" Grid.Row="0" Grid.Column="0"/>
+        <Button x:Name="ProductIdButton" Clicked="ProductIdButton_Clicked"  Grid.Row="0" Grid.Column="1" />
+
+        <ListView x:Name="ProductList"  Grid.Row="1" Grid.ColumnSpan="2" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="{Binding Name}"></Label>
+                </StackLayout>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+
+
+</ContentPage>
